@@ -5,39 +5,40 @@ import Navbar from 'react-bootstrap/Navbar';
 import {Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import '../App.css';
+import style from '../style.css';
 
 const Header = () =>{
   return(
     <div className="header">
-       <Navbar bg="dark" variant="dark">
+       <Navbar >
         <Container>
-          <Navbar.Brand><Link to={'/'}>A&B</Link></Navbar.Brand>
-          <Nav className="me-auto">
+          <Navbar.Brand><Link to={'/'}><h3>Чайный домик</h3></Link></Navbar.Brand>
+          <Nav className="me-auto ">
             <Nav.Link>
               <Link to={'/'}>
-                Главная
+                <p className="p1">Доставка</p>
                 </Link>
               </Nav.Link>
             <Nav.Link>
             <Link to={'/favorites'}>
-              Избраное
+            <p className="p1">Избраное</p>
               </Link>
               </Nav.Link>
             <Nav.Link >
             <Link to={'/cart'}>
-              Корзина
+            <p className="p1">Корзина</p>
               </Link>
             </Nav.Link>
             <Nav.Link >
             <Link to={'/description'}>
-              Описанпие
+            <p className="p1">Описание</p>
               </Link>
             </Nav.Link>
-          </Nav>
-          <Nav>
-            <Button variant="primary">
-                  Войти
-            </Button>
+            <Nav.Link >
+            <Link to={'/form'}>
+            <p className="p1">Войти</p>
+              </Link>
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>

@@ -28,11 +28,11 @@ const [overlayItems,setOverlayItems] = useState([]);
   useEffect(()=>{
     async function axiosData(){
       const tyrsData = 
-      await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/tyrs')
+      await axios.get('https://640a252bd16b1f3ed6e7f83e.mockapi.io/tyrs')
       const favoritesData = 
-      await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/favorites')
+      await axios.get('https://640a252bd16b1f3ed6e7f83e.mockapi.io/tyrs')
       const cartData = 
-      await axios.get('https://637f91ca2f8f56e28e904e7d.mockapi.io/cart')
+      await axios.get('https://640a252bd16b1f3ed6e7f83e.mockapi.io/tyrs')
 
       setFavorites(favoritesData.data)
       setOverlayItems(cartData.data)
@@ -59,7 +59,8 @@ const isFav=(myId)=>{
 
 
   return ( 
-    <AppContext.Provider
+    
+    <AppContext.Provider 
     value={{
       tyrs, 
       setTyrs,
@@ -109,7 +110,7 @@ const isFav=(myId)=>{
                   element={
                     <Basket
                     totalPrice={
-                      overlayItems.reduce((element = overlayItems.length, obj)=>
+                      overlayItems.reduce((element = overlayItems.length, obj)=> 
                       element+obj.price,0
                       )
                     }

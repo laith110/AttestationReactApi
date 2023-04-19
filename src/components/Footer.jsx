@@ -1,48 +1,33 @@
 import React from 'react'
+import style from '../style.css';
 
 const Footer = () => {
   return (
-    <div className='container'>
-      <footer className='row row-col-cols1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top'>
-      <div className='col mb-3'>
-            <a className=''>
-              <img src='img/logo1.png' className='bi me-2' width={180} heigth={180}>
+  
+      <footer>
+      <div className=' div divp'>
+      <div className=' div'>
+              <img src='img/tea.png' className=' div2 itea' width={180} heigth={180}>
               </img>
-            </a>
-            <p>
-              A&B -надежный друг
-            </p>
-            </div>
-            <div className='col mb-3'>
-
-            </div>
-
-            <div className='col mb-4'>
-              <h5>Колонка1</h5>
-              <ul className='nav flex-column'>
-                <li className='nav-item mb-3'>
-                  <a className='nav-link p-0 text-muted'>Надписи</a>
-                  </li>
-                  <li className='nav-item mb-3'>
-                  <a className='nav-link p-0 text-muted'>Надписи</a>
-                  </li>
-                  
-              </ul>
-            </div>
-            <div className='col mb-4'>
-              <h5>Колонка2</h5>
-              <ul className='nav flex-column'>
-                <li className='nav-item mb-3'>
-                  <a className='nav-link p-0 text-muted'>Надписи</a>
-                  </li>
-                  <li className='nav-item mb-3'>
-                  <a className='nav-link p-0 text-muted'>Надписи</a>
-                  </li>
-                  
-              </ul>
-            </div>
+            <p className='p'>
+              Чайный Домик
+            </p></div>
+            <div className=' div'>
+              <div className='div2 ' >
+              <h5> <img src='img/123.png' width={40} >
+              </img></h5>
+              </div>   
+              <div className='div2 '>     
+            <h5> <img src='img/124.png'  width={40}>
+              </img></h5>
+              </div>
+              <div className='div2 dic3'>
+            <h5> <img src='img/125.png'  width={40}>
+              </img></h5>
+              </div>  
+            </div></div>
             </footer>
-    </div>
+   
   )
 }
 

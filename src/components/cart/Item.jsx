@@ -31,11 +31,11 @@ const Item = (props) => {
 
   return ( 
 
-    <div className='conteiner py-3'>
+    
        
-    <main>
+    <main >
         <div className='row row-cols-1 justify-content-evenly 
-        row-cols-md-3 row-cols-sm-2 text-center'>
+        row-cols-md-3 row-cols-sm-6 text-center'>
             <div className='col px-3 py-3'>
                 <div className='card md-6 rounded'>
                     <div className='card-header py-2 px-3'>
@@ -43,26 +43,24 @@ const Item = (props) => {
                         {
              context.isFav(props.myId) == true ?
 
-             <button type='button' className='w-100 btn btn-lg btn-primary' 
+             <button type="button" class="btn btn-outline-info"
              onClick={onClickFav}>Добавлен в избранное
              </button>
                 :
-            <button 
-            type='button' className='w-100 btn btn-lg btn-primary'
+            <button type="button" class="btn btn-outline-info"
             onClick={onClickFav}>Добавить в избранное
             </button>
            
             }
-
-                 <p>{props.title}</p>
+                 <p className='pi'>{props.title}</p>
                  <img className='rounded' src={props.img} width={'85%'}></img>
                  <p>{props.description}</p>
-                 <p>{props.price}</p> 
-                 <button type='button' className='w-100 btn btn-lg btn-primary'
+                 <p className='pi'>Цена{props.price}/150гр</p> 
+                 <button type="button" class="btn btn-outline-dark" 
                 onClick={onClickAdd} > { context.isAdded(props.myId) ?  
                 <img width={13}
                  src={context.isAdded(props.myId) ? '/img/icon.png':'' }
-                 alt=""/>:'Добавить в корзину' }
+                 alt=""/>:'' }Добавить в корзину
                 </button>
                     </div>
 
@@ -71,7 +69,8 @@ const Item = (props) => {
             </div>
         </div>
     </main>
-</div>
+    
+
   )
 }
 

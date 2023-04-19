@@ -2,18 +2,19 @@ import React from 'react'
 import axios from 'axios'
 import { AppContext } from '../../App'
 import Item from './Item'
+
 const Favorites = (props) => {
 
 
     const context =React.createContext(AppContext)
 
     const onAddOverlay = (obj) =>{
-      axios.post('https://637f91ca2f8f56e28e904e7d.mockapi.io/cart',obj)
+      axios.post('https://640a252bd16b1f3ed6e7f83e.mockapi.io/tyrs',obj)
       context.setOverlayItems([...props.OverlayItems,obj]);
     }
 
     const onDeleteFav = (id) =>{
-      axios.delete('https://637f91ca2f8f56e28e904e7d.mockapi.io/favorite/${id')
+      axios.delete('https://640a252bd16b1f3ed6e7f83e.mockapi.io/tyrs/${id')
       props.setFavorites((fav)=>fav.filter((f)=>f.id === id));
     }
 
