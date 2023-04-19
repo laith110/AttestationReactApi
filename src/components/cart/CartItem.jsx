@@ -40,7 +40,7 @@ const CartItem = (props) => {
     }
   }
   return(
-<div >
+<div > 
   { 
       props.item.map(obj=>{
         return(
