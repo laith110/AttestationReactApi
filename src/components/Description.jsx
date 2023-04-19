@@ -7,7 +7,7 @@ const Description = () => {
     <div>
          
       <div>
-    <div>Description</div>
+    <div>Описание</div>
 {/* 
 
     // <motion.img
@@ -191,7 +191,7 @@ whileHover={{
 
 
 
-
+{/* 
 <div id='Pract4'>
 <motion.div id='ani1'
 animate={{
@@ -296,7 +296,7 @@ transition={{
 
 
 
-
+ */}
 
 
 
