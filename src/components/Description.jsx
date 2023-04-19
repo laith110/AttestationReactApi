@@ -7,7 +7,7 @@ const Description = () => {
     <div>
          
       <div>
-    <div>Description</div>
+    <div>Описание</div>
 {/* 
 
     // <motion.img
@@ -159,7 +159,7 @@ transition={{
 <motion.img drag='x'
 src='img/ball.jpg'
 className='ball'
-width={200}
+width={200}  
 
 initial={{
   opacity:0.6,
@@ -191,7 +191,7 @@ whileHover={{
 
 
 
-
+{/* 
 <div id='Pract4'>
 <motion.div id='ani1'
 animate={{
@@ -296,7 +296,7 @@ transition={{
 
 
 
-
+ */}
 
 
 
