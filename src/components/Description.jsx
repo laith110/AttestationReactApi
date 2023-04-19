@@ -159,7 +159,7 @@ transition={{
 <motion.img drag='x'
 src='img/ball.jpg'
 className='ball'
-width={200}
+width={200}  
 
 initial={{
   opacity:0.6,
