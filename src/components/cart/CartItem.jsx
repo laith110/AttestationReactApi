@@ -2,7 +2,7 @@ import React from 'react'
 import Item from './Item'
 import axios from 'axios'
 
-
+  
 const CartItem = (props) => {  
   const onAddOverlay = async(obj) => {
     try{
